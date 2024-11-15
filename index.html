@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    >
+</head>
+<body>
+<!-- Bagian header -->
+<header>
+<div class="jumbotron">
+<h1>My Profile</h1>
+<p>
+    Joined Bangkit cohort 2024 Batch 2
+</p>
+</div>
+
+<!-- navigation bar -->
+<nav class="navbar-list">
+<ul>
+    <li><a href="#About">About</a></li>    
+    <li class="dropdown">
+        <a href="#" class="drop">Projects<i class="arrow"></i></a>
+        <div class="dropdown-content">
+            <a href="#RobotArms">Robot Arms</a>
+            <a href="#Pusaka">Pusaka</a>
+            <a href="#NeverDelay">NeverDelay</a>
+        </div>
+</ul>
+</nav>
+</header>
+
+<!-- Bagian main -->
+<main>
+    <div id="content">
+        <article id="About" class="card">
+            <h2>About</h2>
+            <p>
+                Hello there fam, I am a student with various basic skills. I enjoy learning new things,
+                especially those related to programing and cybersecurity. If you have same intrest like me 
+                maybe we could be friend, Lets be friend!
+            </p>
+        </article>
+            
+        <article class="card" >
+            <h2>Projects</h2>
+            <p>
+                Hey there.. it seems i do have some project that i can show for you guys..
+                feel free ask me on my contact or you can check it on my <i>GitHub</i>. Thank you!
+            </p>
+            <p>
+                *PS: these projects are made in my University
+            </p>
+            <section id="RobotArms">
+                <h3>Robot Arm Pemilah Plastik Kresek dan Botol Plastik</h3>
+                <img src="https://storage.googleapis.com/bucket-image-11152024/robo.jpg" alt="Projects" class="image-setting">
+                <p>
+                    Robot Arm akan mendeteksi suatu objek terlebih dahulu dengan Webcam yang terletak di atas 
+                    menembak kearah bawah untuk mendeteksi apakah objek yang berada di daerah Webcam tersebut adalah 
+                    plastik kresek atau botol plastik. Ketika Webcam mendeteksi adanya plastik kresek atau botol plastik maka 
+                    Arm Robot akan bergerak mengambil Plastik kresek atau botol plastik tersebut lalu akan diangkat ke belakang 
+                    dan di buang sesuai tempat sampahnya.
+                </p>
+            </section>
+            <section id="Pusaka">
+                <h3>Pusaka</h3>
+                <img src="https://storage.googleapis.com/bucket-image-11152024/Pusaka.jpg" alt="Projects" class="image-setting">
+                <p>
+                    Pusaka merupakan sebuah Website untuk meminjam e-book perpustakaan. User akan diminta membuat akun 
+                    terlebih dahulu, kemudian user bisa memilih buku berdasarkan genre ataupun trend dan sebagainya.
+                    ketika user sudah memilih e-book maka akan ada opsi untuk menentukan berapa lama peminjaman e-book
+                    dan akan diberikan link untuk membaca e-book tersebut.
+                </p>
+            </section>
+            <section id="NeverDelay">
+                <h3>NeverDelay</h3>
+                <img src="https://storage.googleapis.com/bucket-image-11152024/NeverDelay.jpg" alt="Projects" class="image-setting">
+                <p>
+                    NeverDelay merupakan aplikasi mobile yang berfungsi untuk memesan tiket bus.
+                    NeverDelay bukan hanya tentang memesan tiket, tetapi memberikan pengalaman perjalanan
+                    yang optimal bagi setiap user. Disini user akan diminta membuat akun terlebih dahulu, kemudian
+                    user dapat memilih lokasi Halte-bus, tujuan dan merek bus. Setelah itu user akan mengatur jumlah 
+                    penumpang dan memilih jam. Langkah terakhir akan ada barcode untuk melakukan transaksi.
+                </p>
+            </section>
+            <section id="JasaBatam">
+                <h3>JasaBatam</h3>
+                <img src="https://storage.googleapis.com/bucket-image-11152024/JasaBatam.jpg" alt="Projects" class="image-setting">
+                <p>
+                    JasaBatam merupakan media sosial untuk mempromosikan UMKM bergerak di bidang jasa berada di Batam.
+                    pengguna bisa mencari tahu jasa yang tersedia di batam.
+                </p>
+            </section>
+        </article>
+    </div>
+
+<!-- Content aside -->
+<aside>
+    <article class="biodata card">
+        <header>
+            <h2>Profile</i></h2>
+            <img src="https://storage.googleapis.com/bucket-image-11152024/biodata.jpg">
+        </header>
+        <section>
+            <table>
+                <tr>
+                    <th>Nama</th>
+                    <td>Alamsyah Wijaya Massie</td>
+                </tr>
+                <tr>
+                    <th>Universitas</th>
+                    <td>Universitas Universal</td>
+                </tr>
+                <tr>    
+                    <th>Domisili</th>
+                    <td>Batam</td>
+                </tr>
+            </table>
+            <div class="sosmed">
+                <ul>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+        </section>
+    </article>
+</aside>
+</main>
+
+<!-- Bagian footer -->
+<footer>
+    <p>Made by &#169; Alamsyah Wijaya Massie</p>
+</footer>
+
+<!-- <script src="java.js"></script> -->
+</body>
+</html>

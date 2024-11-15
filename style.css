@@ -1,0 +1,180 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #d3191c;
+    text-align: center;
+    color: white;
+}
+
+.navbar-list {
+    background-color: #c01b1e;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+.navbar-list ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar-list li {
+    position: relative; 
+    list-style-type: none;
+}
+
+.navbar-list a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-list a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    margin: 10px;
+}
+
+.drop {
+    display: flex;
+}
+
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    background-color: #c01b1e;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #b3171e;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#content {
+    flex: 4;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.image-setting {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+aside {
+    flex: 1;
+    text-align: center;
+}
+
+.biodata header {
+    text-align: center;
+}
+
+.biodata img {
+    width: 200px;
+    
+}
+
+.sosmed {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.sosmed ul {
+    padding: 10px 20px;
+    border-radius: 200px;
+    background-color: #c01b1e;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.sosmed li {
+    list-style-type: none;
+}
+
+.sosmed li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.sosmed li a:hover {
+    color: #89b0d9;
+}
+
+header {
+    display: inline;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #d3191c;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+    main aside {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-list ul {
+        justify-content: center;
+    }
+    main aside {
+        align-self: stretch;
+    }
+}
+
